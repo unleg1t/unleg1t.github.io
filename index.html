@@ -1,89 +1,155 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>i made a hunnid bands</title>
-		<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="your very own website utilizing the why2k template">
-    	<meta name="keywords" content="put,your,tags,here">
-    	<meta name="author" content="your name">
-    	<meta name="twitter:card" content="summary">
-    	<meta name="twitter:creator" content="@yourtwittertag">
-    	<meta property="og:url" content="https://yourdomain.com/">
-    	<meta property="og:title" content="Your name">
-    	<meta property="og:description" content="your very own website utilizing the why2k template">
-    	<meta property="og:image" content="https://yourdomain.com/assets/img/yourimage.png" />
-	</head>
-	<body>
-		<div id="container">
-			<div class="slice">
-				<div class="v-separator"></div>
-				<div id="left-side">
-					<img class="avatar" src="https://via.placeholder.com/200">
-					<div class="name">unlegit</div>
-					<div class="desc">
-						this will be updated sometime soon but for now this is placeholder. waltuh suck my dih.
-					</div>
-					<br>
-					<div class="desc">
-						<a href="https://example.com" title="PLACEHOLDER" class="link-color-1">LINK 1</a>  |  <a href="https://example.com" class="link-color-2">LINK 2</a>  |  <a href="https://example.com" class="link-color-3">LINK 3</a>  |  <a href="https://example.com" class="link-color-4">LINK 4</a>
-					</div>
-				</div>
-				<div class="v-separator"></div>
-			</div>
-			<div class="slice">
-				<div class="v-separator"></div>
-				<div id="right-side">
-					<div class="name">MY PROJECTS</div>
-					<div class="desc">
-						<ul>
-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 1</a></li>
-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 2</a></li>
-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 3</a></li>
-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 4</a></li>
-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 5</a></li>
-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 6</a></li>
-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 7</a></li>
-						</ul>
-						<div class="small-right">lorem ipsum dolor sit amet.</div>
-					</div>
-					<br>
-					<hr>
-					<br>
-					<div class="name">UPDATES</div>
-					<div class="desc scrollable">
-						<div>01.01.2001</div>
-						<ul>
-							<li>Nullam id ipsum ac arcu tincidunt hendrerit at ultrices felis</li>
-						</ul>
-						<div>24.12.2000</div>
-						<ul>
-							<li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</li>
-						</ul>
-						<div>5.3.1999</div>
-						<ul>
-							<li>Aliquam facilisis tellus at condimentum consequat</li>
-						</ul>
-					</div>
-				</div>
-				<div class="v-separator"></div>
-			</div>
-		</div>
-		<div id="extra">
-			<div class="force-left"><span class="name">YOUR SITE</span> <span id="tagline"></span></div>
-			<div class="force-right">(c) YOUR NAME YOUR DATE</div>
-		</div>
-
-		<script>
-			const lines = [
-				"TAGLINE 1",
-				"TAGLINE 2",
-				"TAGLINE 3"
-			];
-
-			var tagline = document.getElementById("tagline");
-			tagline.innerHTML = lines[Math.floor(Math.random() * lines.length)];
-		</script>
-	</body>
-</html>
+@@
+-				<div id="left-side">
+-					<img class="avatar" src="https://via.placeholder.com/200">
+-					<div class="name">unlegit</div>
+-					<div class="desc">
+-						this will be updated sometime soon but for now this is placeholder. waltuh suck my dih.
+-					</div>
+-					<br>
+-					<div class="desc">
+-						<a href="https://example.com" title="PLACEHOLDER" class="link-color-1">LINK 1</a>  |  <a href="https://example.com" class="link-color-2">LINK 2</a>  |  <a href="https://example.com" class="link-[...]
+-					</div>
+-				</div>
++				<div id="left-side">
++					<img id="avatar" class="avatar" src="https://via.placeholder.com/200" alt="avatar">
++					<div id="profile-name" class="name">unleg1t</div>
++					<div id="profile-bio" class="desc">
++						this will be updated sometime soon but for now this is placeholder.
++					</div>
++					<br>
++					<div id="profile-links" class="desc">
++						<!-- profile links will be populated here -->
++						<a id="link-github" href="#" class="link-color-1">GitHub</a>
++					</div>
++				</div>
+@@
+-					<div class="desc">
+-						<ul>
+-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 1</a></li>
+-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 2</a></li>
+-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 3</a></li>
+-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 4</a></li>
+-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 5</a></li>
+-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 6</a></li>
+-							<li class="hoverable"><a href="https://example.com" title="PLACEHOLDER">PROJECT 7</a></li>
+-						</ul>
+-						<div class="small-right">lorem ipsum dolor sit amet.</div>
+-					</div>
++					<div class="desc">
++						<ul id="projects-list">
++							<!-- project list will be populated here -->
++							<li>Loading projects…</li>
++						</ul>
++						<div class="small-right" id="projects-note">lorem ipsum dolor sit amet.</div>
++					</div>
+@@
+-			<div id="extra">
+-			<div class="force-left"><span class="name">YOUR SITE</span> <span id="tagline"></span></div>
+-			<div class="force-right">(c) YOUR NAME YOUR DATE</div>
+-		</div>
++		<div id="extra">
++			<div class="force-left"><span class="name">YOUR SITE</span> <span id="tagline"></span></div>
++			<div class="force-right" id="site-footer">(c) YOUR NAME YOUR DATE</div>
++		</div>
+ 
+-		<script>
+-			const lines = [
+-				"TAGLINE 1",
+-				"TAGLINE 2",
+-				"TAGLINE 3"
+-			];
+-
+-			var tagline = document.getElementById("tagline");
+-			tagline.innerHTML = lines[Math.floor(Math.random() * lines.length)];
+-		</script>
++		<script>
++			// Configuration: set your GitHub username here
++			const GITHUB_USER = 'unleg1t';
++
++			(async function populateFromGitHub() {
++				const avatarEl = document.getElementById('avatar');
++				const nameEl = document.getElementById('profile-name');
++				const bioEl = document.getElementById('profile-bio');
++				const linksEl = document.getElementById('profile-links');
++				const githubLinkEl = document.getElementById('link-github');
++				const projectsListEl = document.getElementById('projects-list');
++				const taglineEl = document.getElementById('tagline');
++				const footerEl = document.getElementById('site-footer');
++
++				try {
++					// Fetch basic profile
++					const userRes = await fetch(`https://api.github.com/users/${GITHUB_USER}`);
++					if (!userRes.ok) throw new Error('GitHub user fetch failed');
++					const user = await userRes.json();
++
++					avatarEl.src = user.avatar_url || avatarEl.src;
++					nameEl.textContent = user.name || user.login || nameEl.textContent;
++					bioEl.textContent = user.bio || bioEl.textContent;
++
++					// Populate profile links: GitHub, blog, and Twitter when available
++					githubLinkEl.href = user.html_url || `https://github.com/${GITHUB_USER}`;
++					githubLinkEl.textContent = 'GitHub';
++
++					// Remove default children and add available links
++					linksEl.innerHTML = '';
++					linksEl.appendChild(githubLinkEl);
++					if (user.blog) {
++						const a = document.createElement('a');
++						a.href = user.blog.startsWith('http') ? user.blog : 'https://' + user.blog;
++						a.className = 'link-color-2';
++						a.textContent = 'Blog';
++						a.style.marginLeft = '10px';
++						linksEl.appendChild(document.createTextNode(' | '));
++						linksEl.appendChild(a);
++					}
++					if (user.twitter_username) {
++						const a = document.createElement('a');
++						a.href = `https://twitter.com/${user.twitter_username}`;
++						a.className = 'link-color-3';
++						a.textContent = '@' + user.twitter_username;
++						a.style.marginLeft = '10px';
++						linksEl.appendChild(document.createTextNode(' | '));
++						linksEl.appendChild(a);
++					}
++
++					// Tagline and footer
++					taglineEl.textContent = user.login || '';
++					const year = new Date().getFullYear();
++					footerEl.textContent = `(c) ${user.name || user.login} ${year}`;
++
++					// Fetch repos and show top ones
++					const reposRes = await fetch(`https://api.github.com/users/${GITHUB_USER}/repos?per_page=100`);
++					if (!reposRes.ok) throw new Error('GitHub repos fetch failed');
++					let repos = await reposRes.json();
++					// Filter out forks and sort by stars
++					repos = repos.filter(r => !r.fork).sort((a, b) => b.stargazers_count - a.stargazers_count);
++
++					projectsListEl.innerHTML = '';
++					if (repos.length === 0) {
++						projectsListEl.innerHTML = '<li>No public repositories found.</li>';
++					} else {
++						repos.slice(0, 7).forEach(r => {
++							const li = document.createElement('li');
++							li.className = 'hoverable';
++							const a = document.createElement('a');
++							a.href = r.html_url;
++							a.title = r.description || r.name;
++							a.textContent = r.name + (r.stargazers_count ? ` ★${r.stargazers_count}` : '');
++							li.appendChild(a);
++							if (r.description) {
++								const desc = document.createElement('div');
++								desc.className = 'small-right';
++								desc.textContent = r.description;
++								li.appendChild(desc);
++							}
++							projectsListEl.appendChild(li);
++						});
++					}
++				} catch (err) {
++					// On error, keep existing placeholders and log error for debugging
++					console.error('Error populating GitHub data:', err);
++				}
++			})();
++		</script>
+ 	</body>
+ </html>
